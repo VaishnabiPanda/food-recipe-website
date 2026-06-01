@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Food</title>
+    <link rel="stylesheet" href="keralafood.css">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=1200&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.62);
+    z-index: -1;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>KERALA FOOD</h1>
+        <p>Kerala cuisine is lush and coastal, built around coconut, curry leaves, rice, seafood, appam, stews, banana chips, and festive sadya dishes.</p>
+        <ul>
+            <li>Appam with Stew</li>
+            <li>Puttu Kadala</li>
+            <li>Avial</li>
+            <li>Kerala Fish Molee</li>
+            <li>Malabar Biryani</li>
+            <li>Payasam</li>
+        </ul>
+        <button><a href="keralarecipe.html">CLICK HERE FOR RECIPES</a></button>
+    </div>
+</body>
+</html>

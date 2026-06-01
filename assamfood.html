@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assam Food</title>
+    <link rel="stylesheet" href="assamfood.css">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("assets/assam-food.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.62);
+    z-index: -1;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>ASSAM FOOD</h1>
+        <p>Assamese food is fresh, light, and aromatic, using mustard oil, rice, sour fruits, herbs, leafy greens, fish, and gentle earthy spices.</p>
+        <ul>
+            <li>Khar</li>
+            <li>Aloo Pitika</li>
+            <li>Ou Tenga Dal</li>
+            <li>Bilahir Tenga</li>
+            <li>Lau Tenga</li>
+            <li>Kosu Xaak with Black Gram</li>
+        </ul>
+        <button><a href="assamrecipe.html">CLICK HERE FOR RECIPES</a></button>
+    </div>
+</body>
+</html>

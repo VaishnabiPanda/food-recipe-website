@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jharkhand Food</title>
+    <link rel="stylesheet" href="jharkhandfood.css">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?auto=format&fit=crop&w=1200&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.62);
+    z-index: -1;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>JHARKHAND FOOD</h1>
+        <p>Jharkhand’s food is earthy and seasonal, with rice, pulses, leafy vegetables, sattu, forest produce, and festive sweets.</p>
+        <ul>
+            <li>Dhuska</li>
+            <li>Rugra Curry</li>
+            <li>Chilka Roti</li>
+            <li>Thekua</li>
+            <li>Pitha</li>
+            <li>Handia Rice</li>
+        </ul>
+        <button><a href="jharkhandrecipe.html">CLICK HERE FOR RECIPES</a></button>
+    </div>
+</body>
+</html>

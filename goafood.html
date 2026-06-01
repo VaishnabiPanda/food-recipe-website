@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goa Food</title>
+    <link rel="stylesheet" href="goafood.css">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("assets/goa-food.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.62);
+    z-index: -1;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>GOA FOOD</h1>
+        <p>Goan cuisine is coastal, bright, and layered with coconut, kokum, vinegar, seafood, rice, warm spices, and Portuguese influence.</p>
+        <ul>
+            <li>Goan Fish Curry</li>
+            <li>Pork Vindaloo</li>
+            <li>Xacuti</li>
+            <li>Bebinca</li>
+            <li>Prawn Balchao</li>
+            <li>Sorpotel</li>
+        </ul>
+        <button><a href="goarecipe.html">CLICK HERE FOR RECIPES</a></button>
+    </div>
+</body>
+</html>

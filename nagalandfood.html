@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagaland Food</title>
+    <link rel="stylesheet" href="nagalandfood.css">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.62);
+    z-index: -1;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>NAGALAND FOOD</h1>
+        <p>Naga cuisine is bold, smoky, and fermented, with king chili, bamboo shoot, axone, smoked pork, greens, and rice.</p>
+        <ul>
+            <li>Smoked Pork with Bamboo Shoot</li>
+            <li>Axone Pork</li>
+            <li>Galho</li>
+            <li>Anishi Curry</li>
+            <li>Fish in Bamboo Shoot</li>
+            <li>Hinkejvu</li>
+        </ul>
+        <button><a href="nagalandrecipe.html">CLICK HERE FOR RECIPES</a></button>
+    </div>
+</body>
+</html>

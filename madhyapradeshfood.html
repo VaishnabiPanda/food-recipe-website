@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhya Pradesh Food</title>
+    <link rel="stylesheet" href="madhyapradeshfood.css">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=1200&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.62);
+    z-index: -1;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>MADHYA PRADESH FOOD</h1>
+        <p>Madhya Pradesh food blends street snacks, royal gravies, wheat dishes, poha, spicy curries, sweets, and hearty central Indian flavours.</p>
+        <ul>
+            <li>Poha Jalebi</li>
+            <li>Dal Bafla</li>
+            <li>Bhutte Ka Kees</li>
+            <li>Bhopali Gosht Korma</li>
+            <li>Indori Garadu</li>
+            <li>Mawa Bati</li>
+        </ul>
+        <button><a href="madhyapradeshrecipe.html">CLICK HERE FOR RECIPES</a></button>
+    </div>
+</body>
+</html>

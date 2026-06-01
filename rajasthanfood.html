@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajasthan Food</title>
+    <link rel="stylesheet" href="rajasthanfood.css">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("assets/rajasthan-food.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.62);
+    z-index: -1;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>RAJASTHAN FOOD</h1>
+        <p>Rajasthani cuisine is royal, arid-land cooking with ghee, gram flour, dried berries, millet, fiery curries, and long-lasting travel foods.</p>
+        <ul>
+            <li>Dal Baati Churma</li>
+            <li>Gatte Ki Sabzi</li>
+            <li>Laal Maas</li>
+            <li>Ker Sangri</li>
+            <li>Pyaaz Kachori</li>
+            <li>Ghevar</li>
+        </ul>
+        <button><a href="rajasthanrecipe.html">CLICK HERE FOR RECIPES</a></button>
+    </div>
+</body>
+</html>

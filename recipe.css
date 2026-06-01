@@ -1,0 +1,170 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap");
+
+:root {
+    --ink: #241710;
+    --muted: #6e5f52;
+    --paper: rgba(255, 252, 244, 0.92);
+    --spice: #d93f12;
+    --leaf: #247a54;
+    --gold: #f3a712;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: clamp(24px, 5vw, 72px);
+    color: var(--ink);
+    font-family: "Outfit", Arial, sans-serif;
+    background:
+        linear-gradient(135deg, rgba(255, 248, 238, 0.96), rgba(255, 235, 199, 0.88)),
+        url("https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=1800&q=80");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+body::before {
+    content: "Recipe Collection";
+    display: block;
+    width: min(980px, 100%);
+    margin: 0 auto 10px;
+    color: var(--spice);
+    font-size: 0.84rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    animation: fadeDown 650ms ease both;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: auto 0 0;
+    height: 8px;
+    background: linear-gradient(90deg, var(--spice), var(--gold), var(--leaf));
+    z-index: 10;
+}
+
+h1 {
+    width: min(980px, 100%);
+    margin: 34px auto 0;
+    padding: 22px 24px 0;
+    color: var(--ink);
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(2rem, 5vw, 4.4rem);
+    line-height: 1;
+    letter-spacing: 0;
+    animation: fadeUp 700ms ease both;
+}
+
+h1:first-of-type {
+    margin-top: 0;
+}
+
+p {
+    width: min(980px, 100%);
+    margin: 0 auto;
+    padding: 22px 24px 26px;
+    border-left: 5px solid var(--spice);
+    border-radius: 8px;
+    color: var(--muted);
+    font-size: clamp(1rem, 1.5vw, 1.12rem);
+    line-height: 1.8;
+    background: var(--paper);
+    box-shadow: 0 22px 55px rgba(54, 32, 18, 0.18);
+    backdrop-filter: blur(12px);
+    animation: recipeCard 720ms ease both;
+    transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+p:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 28px 68px rgba(54, 32, 18, 0.24);
+}
+
+br {
+    display: block;
+    margin-top: 10px;
+}
+
+strong {
+    color: var(--ink);
+    font-weight: 800;
+}
+
+a.home-link {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    z-index: 20;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 18px;
+    border-radius: 999px;
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+    background: linear-gradient(135deg, var(--leaf), var(--spice));
+    box-shadow: 0 16px 32px rgba(36, 122, 84, 0.28);
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-14px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes recipeCard {
+    from {
+        opacity: 0;
+        transform: translateY(18px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 24px 14px 52px;
+    }
+
+    h1,
+    p {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 1ms !important;
+    }
+}
+

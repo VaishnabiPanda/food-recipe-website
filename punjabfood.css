@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Outfit", Arial, sans-serif;
+    background: #fff8ee;
+}
+
+body .main {
+    min-height: 100vh;
+    padding: clamp(28px, 5vw, 70px) clamp(18px, 6vw, 92px) !important;
+    gap: 18px;
+    overflow: hidden;
+    animation: pageGlow 900ms ease both;
+}
+
+body .main::before {
+    background:
+        linear-gradient(120deg, rgba(20, 12, 8, 0.82), rgba(20, 12, 8, 0.52)),
+        radial-gradient(circle at 20% 20%, rgba(243, 167, 18, 0.35), transparent 35%) !important;
+}
+
+h1 {
+    margin: 0;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(2.4rem, 7vw, 5.4rem);
+    line-height: 1;
+    letter-spacing: 0;
+    text-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+    animation: floatUp 700ms ease both;
+}
+
+p {
+    width: min(920px, 100%);
+    margin: 0;
+    padding: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: clamp(1rem, 1.6vw, 1.12rem);
+    line-height: 1.75;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 22px 52px rgba(0, 0, 0, 0.24);
+    animation: floatUp 800ms 100ms ease both;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    width: min(840px, 100%);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    animation: floatUp 800ms 180ms ease both;
+}
+
+li {
+    padding: 10px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    border-radius: 999px;
+    color: #fff;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(10px);
+    transition: transform 180ms ease, background 180ms ease;
+}
+
+li:hover {
+    transform: translateY(-3px);
+    background: rgba(243, 167, 18, 0.28);
+}
+
+button {
+    display: block;
+    margin: 22px auto;
+    border: 0;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #d93f12, #f3a712);
+    box-shadow: 0 18px 38px rgba(217, 63, 18, 0.32);
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+button a,
+button A {
+    display: inline-flex;
+    align-items: center;
+    min-height: 48px;
+    padding: 0 22px;
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 22px 48px rgba(217, 63, 18, 0.42);
+}
+
+@keyframes floatUp {
+    from {
+        opacity: 0;
+        transform: translateY(22px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pageGlow {
+    from {
+        filter: saturate(0.8);
+    }
+    to {
+        filter: saturate(1);
+    }
+}
+
+@media (max-width: 720px) {
+    body .main {
+        justify-content: flex-start !important;
+    }
+
+    p {
+        padding: 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 1ms !important;
+    }
+}

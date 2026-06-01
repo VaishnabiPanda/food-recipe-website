@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipur Food</title>
+    <link rel="stylesheet" href="manipurfood.css">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?auto=format&fit=crop&w=1200&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.62);
+    z-index: -1;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>MANIPUR FOOD</h1>
+        <p>Manipuri food is fresh, light, and aromatic, with rice, fermented fish, leafy greens, herbs, bamboo shoot, and minimal oil.</p>
+        <ul>
+            <li>Eromba</li>
+            <li>Chamthong</li>
+            <li>Singju</li>
+            <li>Nga Thongba</li>
+            <li>Morok Metpa</li>
+            <li>Kangshoi</li>
+        </ul>
+        <button><a href="manipurrecipe.html">CLICK HERE FOR RECIPES</a></button>
+    </div>
+</body>
+</html>

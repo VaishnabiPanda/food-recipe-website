@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maharashtra Food</title>
+    <link rel="stylesheet" href="maharashtrafood.css">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=1200&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.62);
+    z-index: -1;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>MAHARASHTRA FOOD</h1>
+        <p>Maharashtrian cuisine is diverse, from fiery misal and vada pav to coastal curries, bhakri, festive sweets, and peanut-coconut masalas.</p>
+        <ul>
+            <li>Vada Pav</li>
+            <li>Misal Pav</li>
+            <li>Puran Poli</li>
+            <li>Pav Bhaji</li>
+            <li>Kothimbir Vadi</li>
+            <li>Sol Kadhi</li>
+        </ul>
+        <button><a href="maharashtrarecipe.html">CLICK HERE FOR RECIPES</a></button>
+    </div>
+</body>
+</html>

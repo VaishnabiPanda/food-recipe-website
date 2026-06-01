@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sikkim Food</title>
+    <link rel="stylesheet" href="sikkimfood.css">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1543353071-10c8ba85a904?auto=format&fit=crop&w=1200&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.62);
+    z-index: -1;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>SIKKIM FOOD</h1>
+        <p>Sikkim food is warm and Himalayan, with momos, noodle soups, fermented greens, millet, cheese, and simple mountain flavours.</p>
+        <ul>
+            <li>Momos</li>
+            <li>Thukpa</li>
+            <li>Phagshapa</li>
+            <li>Gundruk Soup</li>
+            <li>Sha Phaley</li>
+            <li>Sel Roti</li>
+        </ul>
+        <button><a href="sikkimrecipe.html">CLICK HERE FOR RECIPES</a></button>
+    </div>
+</body>
+</html>
